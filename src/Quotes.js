@@ -6,7 +6,7 @@ const QuoteAPIURL = "https://breakingbadapi.com/api/quotes";
 function Quotes() {
   const [quote, setQuote] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(5);
+  const [postPerPage] = useState(5);
   useEffect(() => {
     fetchQuotes();
   }, []);
