@@ -10,33 +10,40 @@ function HarryPotter() {
   const fetchQuotes = async () => {
     const data = await fetch(HarryPorterApi);
     const item = await data.json();
-    console.log(item);
     setCharacters(item);
   };
 
   return (
     <>
       <h1>Harry Potter Characters</h1>
-      {characters.map((el) => {
-        const {
-          name,
-          gender,
-          house,
-          dateOfBirth,
-          yearOfBirth,
-          ancestry,
-          image
-        } = el;
-        return (
-          <>
-            <p>
-              {name}, {gender}, {house}, {dateOfBirth}, {yearOfBirth},{" "}
-              {ancestry}{" "}
-            </p>
-            <img src={image} alt={name} />
-          </>
-        );
-      })}
+      <section className="harrypottermaincard">        
+        {characters.map((el, index) => {
+          const {
+            name,
+            gender,
+            house,
+            dateOfBirth,
+            yearOfBirth,
+            ancestry,
+            image,          
+          } = el;
+          return (
+            <>
+              <article className="harry-potter-article">
+                  <img src={image} alt={name}/>
+                  <p>
+                    <span className="common-class">Character Name: {name}</span>
+                    <span className="common-class">Gender: {gender}</span>
+                    <span className="common-class">House: {house}</span>
+                    <span className="common-class">Date of Birth: {dateOfBirth}</span>
+                    <span className="common-class">Year of Birth: {yearOfBirth}</span>
+                    <span className="common-class">Ancestry: {ancestry}</span>
+                  </p>              
+                </article>
+            </>
+          );
+        })}
+      </section>
     </>
   );
 }
