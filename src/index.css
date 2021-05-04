@@ -106,3 +106,15 @@ ul.pagination li button {
   padding: 2px 4px;
 }
 
+.logoImage{
+  width: 60px;
+  animation: App-logo-spin infinite 10s linear;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
