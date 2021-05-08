@@ -56,12 +56,20 @@ body {
   border-radius: 4px;
   text-align: justify;
   position: relative;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
 }
 
 .singleCard span {
   position: absolute;
   right: 12px;
   top: 12px;
+}
+
+.singleCard:hover{
+  background-color: darkblue;
+  color: white;
+  transform: scale(1.01);
 }
 
 .quotesCard {
