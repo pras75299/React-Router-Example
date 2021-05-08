@@ -15,9 +15,9 @@ function HarryPotter() {
 
   return (
     <>
-      <h1>Harry Potter Characters</h1>
+      <h1 className="commontitleclass">Harry Potter Characters</h1>
       <section className="harrypottermaincard">        
-        {characters.map((el, index) => {
+        {characters.map((el, index = new Date().getDate().toLocaleString()*Math.random(3)) => {
           const {
             name,
             gender,
@@ -29,7 +29,7 @@ function HarryPotter() {
           } = el;
           return (
             <>
-              <article className="harry-potter-article">
+              <article key={index} className="harry-potter-article">
                   <img src={image} alt={name}/>
                   <p>
                     <span className="common-class">Character Name: {name}</span>

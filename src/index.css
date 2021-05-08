@@ -166,3 +166,22 @@ span.common-class {
 .harry-potter-article:hover img{
   border: white solid 5px;
 }
+
+h1.commontitleclass {
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 60%;
+  margin: 0 auto 34px auto;
+  position: relative;
+}
+
+h1.commontitleclass::after{
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: darkblue;
+  position: absolute;
+  left: 47%;
+  right: 0;
+  bottom: -10px;
+}

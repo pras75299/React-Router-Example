@@ -18,7 +18,7 @@ export default function Cats() {
 
   return (
     <>
-      <h2>Cat Facts</h2>
+      <h1 className="commontitleclass">Cat Facts</h1>
       {all.map((cat) => {
         const { text, updatedAt } = cat;
         return (

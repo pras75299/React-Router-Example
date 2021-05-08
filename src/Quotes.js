@@ -25,7 +25,7 @@ function Quotes() {
   };
   return (
     <>
-      <h2>Breaking Bad Quotes</h2>
+      <h1 className="commontitleclass">Breaking Bad Quotes</h1>
       {currentPosts.map((el) => {
         const { quote_id, quote, author, series } = el;
         return (
