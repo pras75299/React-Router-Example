@@ -15,17 +15,17 @@ function Nav() {
 
         <li>
           <Link to="/cats">
-            <span>Cat Facts</span>
+           Cat Facts
           </Link>
         </li>
         <li>
           <Link to="/quotes">
-            <span>Breaking Bad Quotes</span>
+            Breaking Bad
           </Link>
         </li>
         <li>
-          <Link to="/potter">
-            <span>Harry potter</span>
+          <Link to="/harry-potter">
+            Harry potter
           </Link>
         </li>
       </ul>

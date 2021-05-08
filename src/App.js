@@ -16,7 +16,7 @@ export default function App() {
           <Route path="/about" component={About} />
           <Route path="/cats" component={Cats} />
           <Route path="/quotes" component={Quotes} />
-          <Route path="/potter" component={HarryPotter} />
+          <Route path="/harry-potter" component={HarryPotter} />
         </Switch>
       </div>
     </Router>
